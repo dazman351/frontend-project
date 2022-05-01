@@ -12,16 +12,16 @@
 <body>
     <!-- Header -->
     <div class="container">
-        <header class="header">
+        <header class="header" id="header0">
             <div class="header__inner"  id="header">
                 <div class="header__logo">
                     <img src="./images/logo.png" alt="Тут будет лого">
                 </div>
                 <nav class="nav">
-                    <a href="#" class="nav__link">Home</a>
-                    <a href="#" class="nav__link">Menu</a>
-                    <a href="#" class="nav__link">About us</a>
-                    <a href="#" class="nav__link">Contacts</a>
+                    <a href="#" class="nav__link" data-scroll="#header0">Home</a>
+                    <a href="#" class="nav__link" data-scroll="#slider">Menu</a>
+                    <a href="#" class="nav__link" data-scroll="#features">Features</a>
+                    <a href="#" class="nav__link" data-scroll="#footer">Contacts</a>
                 </nav>
 
                 <button class="burger" type="button">
@@ -38,7 +38,7 @@
 
     <div class="container">
         <!-- Features -->
-        <div class="features">
+        <div class="features" id="features">
             <div class="features__item">
                 <div class="features__icon">
                     
@@ -110,7 +110,7 @@
         </div>
     </div>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <!-- Footer -->
         <div class="social">
             <div class="text">
@@ -123,6 +123,12 @@
             </div>
         </div>
     </footer>
+    <div class="button">
+        <button class="up" type="button" id="upbutton" data-scroll="#header0">
+            Наверх
+        </button>
+    </div>
+    
 
    <script src="style/javascript.js"></script>
 </body>

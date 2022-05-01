@@ -29,14 +29,14 @@ body {
 .header__inner.fixed {
     position: fixed;
     background: white;
-    height: 70px;
+    height: 60px;
     width: 750px;
     border-radius: 5px;
 }
 
 .header__inner.fixed img {
     width: 150;
-    height: 57px;
+    height: 47px;
 }
 
 
@@ -151,20 +151,19 @@ body {
 .features__icon {
     display: flex;
     justify-content: center;
+    
 }
 
 .circle {
     width: 60px;
     height: 60px;
-    background: rgb(255, 166, 0);
+    background-color: rgb(255, 166, 0);
     border-radius: 100%;
     
 }
 
 
-
 .circle img {
-    background: none;
     position: relative;
     top: 18px;
 }
@@ -172,6 +171,7 @@ body {
 .features__icon img {
     width: 25px;
     height: 25px;
+    overflow: hidden;
 
 }
 
@@ -208,6 +208,21 @@ body {
 
 .footer__social a {
     margin: 0 15px;
+}
+
+
+.up.upbutton {
+    background-color: blueviolet;
+    border: 1px solid green;
+    position: fixed;
+    padding: 5px 10px;
+    border-radius:  15px;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    margin: 30px 40px;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 
