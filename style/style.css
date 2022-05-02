@@ -137,6 +137,7 @@ body {
     height: 450px;
     background: rgb(255, 179, 15);
     width: 100%;
+    overflow: hidden;
 }
 
 .jsslider {
@@ -308,13 +309,20 @@ body {
 
 @media (max-width: 744px) {
 
+    .nav__link {
+        padding: 13.5px 35px;
+    }
+
     .slider {
-        height: 650px;
+        height: 660px;
+        overflow: hidden;
+        margin-top: 70px;
     }
 
 
     .jsslider {
-        height: auto;
+        overflow: hidden;
+        height: 660px;
     }
 
     .slider__item {
@@ -359,11 +367,6 @@ body {
     
 
 
-    .nav__link {
-        padding: 15px 35px;
-        color: white;
-    }
-
     .burger {
         display: block;
         font-size: 0;
@@ -393,6 +396,21 @@ body {
 
 
 @media (max-width: 600px) {
+    .header__inner {
+        margin-bottom: 10px;
+    }
+
+
+    .jsslider {
+        overflow: hidden;
+    }
+
+    .slider {
+        height: auto;
+        
+
+    }
+
     .slider__photo img {
         width: 150px;
     }
