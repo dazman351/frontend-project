@@ -19,7 +19,7 @@
     })
 
     function CheckPos (scrollPos, sliderH) {
-        if(scrollPos > sliderH + 100) {
+        if(scrollPos > sliderH + 270) {
             header.addClass('fixed');
         } else {
             header.removeClass('fixed');
@@ -27,18 +27,6 @@
     }
 
 
-    $(window).on("scroll load resize", function() {
-        scrollPos = $(this).scrollTop();
-
-        if(scrollPos > sliderH + 100) {
-            upbutton.addClass('upbutton');
-        } else {
-            upbutton.removeClass('upbutton');
-        }
-
-
-
-    });
 
 
     $("[data-scroll]").on('click', function(event) {
@@ -68,7 +56,16 @@
     });
 
     
-    
+    // Slider
+    let jsslider = $("#jsslider");
+
+    jsslider.slick({
+        Infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: false,
+        arrows: true
+    });
 
 
 });

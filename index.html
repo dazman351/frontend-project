@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="style/style.css">
     <title>First project</title>
     <!-- jQuery -->
@@ -31,10 +32,132 @@
         </header>
     </div>
 
-    <div class="slider" id="slider">
-       <!-- Slider -->
+    <div class="title-page">
+        <h3>Добро пожаловать в наш магазин пиццы!</h3>
+        <p>Здесь у вас будет огромный выбор пицц на любой вкус. Попробуйте наши блюда!</p>
     </div>
 
+
+<div class="slider" id="slider">
+       <!-- Slider -->
+    <div class="jsslider" id="jsslider">
+        <div>
+            <div class="slider__item">
+                <div class="slider__photo">
+                    <img src="./images/dodomix.png" alt="pizza">
+                </div>
+                <div class="slider__info">
+                    <h2 class="pizza-name">
+                        Додо Пицца
+                    </h2>
+                    <p class="description">
+                        Бекон, цыпленок, ветчина, сыр блю чиз, сыры чеддер и пармезан,
+                        соус песто, кубики брынзы, томаты, красный лук, моцарелла,
+                        соус альфредо, чеснок, итальянские травы.
+                    </p>
+                    <h3 class="price">
+                        От 22.90p
+                    </h3>
+                    <button class="buy-pizza" type="button">
+                        Заказать
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="slider__item">
+                <div class="slider__photo">
+                    <img src="./images/chicken-bombony.png" alt="pizza">
+                </div>
+                <div class="slider__info">
+                    <h2 class="pizza-name">
+                        Чикен бомбони
+                    </h2>
+                    <p class="description">
+                        Куриные кусочки, сладкий перец, сыры чеддер и пармезан,
+                        моцарелла, красный лук, соус сладкий чили, соус альфредо
+                    </p>
+                    <h3 class="price">
+                        От 20.90p
+                    </h3>
+                    <button class="buy-pizza" type="button">
+                        Заказать
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="slider__item">
+                <div class="slider__photo">
+                    <img src="./images/derevnya.png" alt="pizza">
+                </div>
+                <div class="slider__info">
+                    <h2 class="pizza-name">
+                        Деревенская
+                    </h2>
+                    <p class="description">
+                        Картофель из печи, маринованные огурчики, цыпленок, соус ранч,
+                        томаты, красный лук, чеснок, моцарелла, томатный соус
+                    </p>
+                    <h3 class="price">
+                        От 17.90p
+                    </h3>
+                    <button class="buy-pizza" type="button">
+                        Заказать
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="slider__item">
+                <div class="slider__photo">
+                    <img src="./images/dodo.png" alt="pizza">
+                </div>
+                <div class="slider__info">
+                    <h2 class="pizza-name">
+                        Додо
+                    </h2>
+                    <p class="description">
+                        Бекон, митболы из говядины, пикантная пепперони, моцарелла, томаты,
+                        шампиньоны, сладкий перец, красный лук, чеснок, томатный соус
+                    </p>
+                    <h3 class="price">
+                        От 22.90p
+                    </h3>
+                    <button class="buy-pizza" type="button">
+                        Заказать
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="slider__item">
+                <div class="slider__photo">
+                    <img src="./images/karbonara.png" alt="pizza">
+                </div>
+                <div class="slider__info">
+                    <h2 class="pizza-name">
+                        Карбонара
+                    </h2>
+                    <p class="description">
+                        Бекон, сыры чеддер и пармезан, моцарелла, томаты,
+                        соус альфредо, красный лук, чеснок, итальянские травы
+                    </p>
+                    <h3 class="price">
+                        От 17.90p
+                    </h3>
+                    <button class="buy-pizza" type="button">
+                        Заказать
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
     <div class="container">
         <!-- Features -->
@@ -117,19 +240,18 @@
                 <h4>Copyright - https://github.com/dazman351</h4>
             </div>
             <div class="footer__social">
-                <a href="#" class="social__link">Telegram</a>
-                <a href="#" class="social__link">Github</a>
+                <a href="https://t.me/dazman351" class="social__link">Telegram</a>
+                <a href="https://github.com/dazman351/frontend-project" class="social__link">Github</a>
                 <a href="#" class="social__link">LinkedIn</a>
             </div>
         </div>
     </footer>
-    <div class="button">
-        <button class="up" type="button" id="upbutton" data-scroll="#header0">
-            Наверх
-        </button>
-    </div>
     
-
-   <script src="style/javascript.js"></script>
+    
+        
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>"></script>
+    <script src="style/javascript.js"></script>
 </body>
 </html>

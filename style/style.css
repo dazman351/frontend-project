@@ -123,11 +123,77 @@ body {
 }
 
 
+.title-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 35px 10px 0 10px;
+}
+
+
 /* Slider */
 .slider {
-    margin-top: 30px;
+    margin-top: 60px;
     height: 450px;
-    background: blueviolet;
+    background: rgb(255, 179, 15);
+    width: 100%;
+}
+
+.jsslider {
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.jsslider .slick-arrow {
+    position: absolute;
+    top: 45%;
+    border: 1px solid rgb(223, 207, 207);
+    z-index: 15;
+    font-size: 0;
+    width: 32px;
+    height: 32px;
+}
+
+.jsslider .slick-arrow.slick-prev {
+    left: 0;
+    background-image: url('../images/left-arrow.png');
+
+}
+
+.jsslider .slick-arrow.slick-next {
+    right: 0;
+    background-image: url("../images/right-arrow.png");
+}
+
+
+.slider__item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 75px 40px;
+
+}
+
+
+.slider__photo {
+    max-width: 50%;
+    height: auto;
+}
+
+.slider__info {
+    padding-top: 20px;
+    padding-left: 150px;
+    max-width: 50%;
+}
+
+.buy-pizza {
+    background-color: rgb(67, 131, 228);
+    border: 1px solid rgb(12, 99, 231);
+    padding: 10px 15px;
+    border-radius: 15px;
+    cursor: pointer;
 }
 
 /* Features */
@@ -212,19 +278,6 @@ body {
 }
 
 
-.up.upbutton {
-    background-color: blueviolet;
-    border: 1px solid green;
-    position: fixed;
-    padding: 5px 10px;
-    border-radius:  15px;
-    right: 0;
-    bottom: 0;
-    z-index: 1000;
-    margin: 30px 40px;
-    font-size: 20px;
-    cursor: pointer;
-}
 
 
 
@@ -255,6 +308,29 @@ body {
 
 @media (max-width: 744px) {
 
+    .slider {
+        height: 650px;
+    }
+
+
+    .jsslider {
+        height: auto;
+    }
+
+    .slider__item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    
+    }
+
+
+    .slider__info {
+        padding: 0;
+        text-align: center;
+    }
     
 
     .header__inner.fixed {
@@ -305,12 +381,45 @@ body {
         margin: 0 40px;
     }
 
+
+    .title-page {
+
+        font-size: 13px;
+        margin: 25px 10px 0 10px;
+    }
+
 }
+
+
+
+@media (max-width: 600px) {
+    .slider__photo img {
+        width: 150px;
+    }
+
+    .slider__info {
+        width: auto;
+    }
+
+    
+    .title-page {
+
+        font-size: 11px;
+        margin: 20px 10px 0 10px;
+    }
+}
+
 
 
 @media (max-width: 327px) {
 
-   
+    .slider__photo img {
+        width: 100px;
+    }
+
+    .slider__info {
+        width: 250px;
+    }
 
     .header__inner.fixed {
         position: fixed;
