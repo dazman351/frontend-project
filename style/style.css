@@ -46,6 +46,10 @@ body {
     padding: 17px 0 0 0;
     align-items: center;
     color: black;
+    border-bottom: 1px solid grey;
+    border-right: 1px solid grey;
+    border-left: 1px solid grey;
+    border-radius: 20px;
 }
 
 .nav {
