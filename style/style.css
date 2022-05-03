@@ -147,6 +147,7 @@ body {
 }
 
 
+
 .jsslider .slick-arrow {
     position: absolute;
     top: 45%;
@@ -311,6 +312,7 @@ body {
 
     .nav__link {
         padding: 13.5px 35px;
+        color: white;
     }
 
     .slider {
@@ -324,6 +326,7 @@ body {
         overflow: hidden;
         height: 660px;
     }
+
 
     .slider__item {
         width: 100%;
@@ -352,11 +355,11 @@ body {
    
     .nav {
         display: none;
+        position: absolute;
         background-color: rgb(92, 29, 151);
         text-align: right;
         width: 100%;
         flex-direction: column;
-        position: absolute;
         right: 0;
         top: 80px;
     }
